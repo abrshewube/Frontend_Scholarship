@@ -10,7 +10,7 @@ const HomePage = () => {
 
   useEffect(() => {
     // Fetch all scholarships when the component mounts
-    fetch("http://localhost:8080/api/scholarships")
+    fetch("https://scholarship-ncvp.onrender.com/api/scholarships")
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);
@@ -26,7 +26,7 @@ const HomePage = () => {
     const selectedCode = event.target.value;
     setSelectedCountry(selectedCode);
     // Fetch scholarships by country code when a country is selected
-    fetch(`http://localhost:8080/api/scholarships/country/${selectedCode}`)
+    fetch(`https://scholarship-ncvp.onrender.com/api/scholarships/country/${selectedCode}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);
