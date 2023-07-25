@@ -1,13 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(244, 242, 239);
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f7fafc;
+    background-color: #1a4c6d;
+  }
+  
+
+ 
+footer {
+  background-color: #1a4c6d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer a {
+  display: block;
+  padding: 6px 0;
 }
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  padding-top: 16px;
+} 
+
+
+
+
+
+
+
+
+/* Set the height and width of the card */
+.card {
+  height: 200px;
+  width: 300px;
+}
+
+/* Position the card on the left mid-corner */
+.card {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.cards {
+  height: 100px;
+}
+
