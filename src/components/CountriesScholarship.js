@@ -9,7 +9,7 @@ const CountryScholarshipsPage = () => {
 
   useEffect(() => {
     // Fetch scholarships by country code when the component mounts
-    fetch(`http://localhost:8080/api/scholarships/country/${code}`)
+    fetch(`https://scholarship-ncvp.onrender.com/api/scholarships/country/${code}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);

@@ -10,7 +10,7 @@ const ScholarshipsPage = () => {
 
   useEffect(() => {
     // Fetch scholarship details when the component mounts
-    fetch(`http://localhost:8080/api/scholarships/${id}`)
+    fetch(`https://scholarship-ncvp.onrender.com/api/scholarships/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarship(data);

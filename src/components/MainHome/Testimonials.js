@@ -7,7 +7,7 @@ const Testimonials = () => {
 
   // Replace 'http://localhost:8080/api/testimonials' with your backend API endpoint to fetch testimonials.
   useEffect(() => {
-    fetch('http://localhost:8080/api/testimonials')
+    fetch('https://scholarship-ncvp.onrender.com/api/testimonials')
       .then((response) => response.json())
       .then((data) => {
         setTestimonials(data);

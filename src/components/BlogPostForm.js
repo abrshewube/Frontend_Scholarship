@@ -20,7 +20,7 @@ const BlogPostForm = () => {
 
     // Send the blog post data to the server
     try {
-      const response = await fetch('http://localhost:8080/api/blog', {
+      const response = await fetch('https://scholarship-ncvp.onrender.com/api/blog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

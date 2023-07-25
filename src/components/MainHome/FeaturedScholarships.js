@@ -7,7 +7,7 @@ const FeaturedScholarships = () => {
 
   // Replace 'http://localhost:8080/api/featured-scholarships' with your backend API endpoint to fetch featured scholarships.
   useEffect(() => {
-    fetch('http://localhost:8080/api/featured-scholarships')
+    fetch('https://scholarship-ncvp.onrender.com/api/featured-scholarships')
       .then((response) => response.json())
       .then((data) => {
         setFeaturedScholarships(data);
