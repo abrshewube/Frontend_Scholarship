@@ -23,7 +23,12 @@ const ScholarshipsPage = () => {
   }, [id]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="loading-spinner">
+        <div className="spinner"></div>
+        <p className="text-gray-600 font-semibold mt-4">Loading...</p>
+      </div>
+    )
   }
 
   if (error) {
