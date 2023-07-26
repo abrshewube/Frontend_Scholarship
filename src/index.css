@@ -79,3 +79,33 @@ footer p {
   height: 100px;
 }
 
+/* styles.css (or any other CSS file you are using) */
+
+/* styles.css (or any other CSS file you are using) */
+
+/* Loading spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(from -45deg, #3498db, #e74c3c, #f9c922);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

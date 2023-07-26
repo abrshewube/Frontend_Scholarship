@@ -20,7 +20,13 @@ const FeaturedScholarships = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading featured scholarships...</p>;
+    return (
+      <div className="loading-spinner">
+        <div className="spinner"></div>
+        <p className="text-gray-600 font-semibold mt-4"> Featured Scholarships Loading...</p>
+      </div>
+    )
+    
   }
 
   if (error) {
