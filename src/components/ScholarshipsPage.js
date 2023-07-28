@@ -40,16 +40,17 @@ const ScholarshipsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 mt-4 mb-4">
+    <div className="container mx-auto px-4 mt-4 mb-4 ">
       <h1 className="text-2xl font-bold mb-4 text-blue-900">{scholarship.name}</h1>
       <div className="bg-white p-6 rounded shadow-2xl">
       <div className="mb-4">
           <img
             src={scholarship.imageurl} // Replace with the URL of the scholarship image
             alt={scholarship.name}
-            className="w-75 h-auto rounded-t "
+            className="w-70 h-auto rounded-t ml-40 r-15"
           />
         </div>
+        <div className='ml-40'>
         <h2 className="text-2xl font-bold mb-4 text-red-500 ">Scholarship Details</h2>
         <h3 className="text-lg font-semibold mb-2 text-blue-500">{scholarship.name}</h3>
         <p className="text-sm text-gray-600 mb-2"><span className='font-bold italic'>Description:</span> {parse(scholarship.description)}</p>
@@ -57,7 +58,7 @@ const ScholarshipsPage = () => {
         <p className="text-sm text-gray-600"><span className='font-bold italic'>Application Deadline:</span> {new Date(scholarship.applicationDeadline).toLocaleDateString() }</p>
         <p className="text-sm text-gray-600"><span className='font-bold italic'>Details:</span>Details: {scholarship.category.description}</p>
         {/* Add other scholarship details as needed */}
-
+        </div>
         <div className="flex justify-left mt-6 ml-0">
         <a href={`${scholarship.link}`} target="_blank"  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Apply </a>
             </div>
