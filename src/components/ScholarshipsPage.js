@@ -47,7 +47,7 @@ const ScholarshipsPage = () => {
           <img
             src={scholarship.imageurl} // Replace with the URL of the scholarship image
             alt={scholarship.name}
-            className="w-70 h-auto rounded-t ml-40 r-15"
+            className="w-70 h-auto rounded-t ml-40 "
           />
         </div>
         <div className='ml-40'>

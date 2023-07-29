@@ -16,7 +16,7 @@ const ScholarshipForm = () => {
       code: "",
     },
     isFeatured: false,
-    imageUrl: "",
+    imageurl: "",
     link: "",
   });
 
@@ -201,8 +201,8 @@ const ScholarshipForm = () => {
           <label className="block text-sm font-medium text-gray-700">Image URL</label>
           <input
             type="text"
-            name="imageUrl"
-            value={scholarshipData.imageUrl}
+            name="imageurl"
+            value={scholarshipData.imageurl}
             onChange={handleInputChange}
             className="mt-1 p-2 border rounded-md w-full"
           />
