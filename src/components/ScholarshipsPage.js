@@ -134,7 +134,7 @@ const ScholarshipsPage = () => {
               <span className="font-bold italic">Description:</span> {parse(scholarship.description)}
             </p>
             <p className="text-sm text-gray-600 mb-2">
-              <span className="font-bold italic">Eligibility Criteria:</span> {scholarship.eligibilityCriteria}
+              <span className="font-bold italic">Eligibility Criteria:</span> {parse(scholarship.eligibilityCriteria)}
             </p>
             <p className="text-sm text-gray-600">
               <span className="font-bold italic">Application Deadline:</span>{' '}
