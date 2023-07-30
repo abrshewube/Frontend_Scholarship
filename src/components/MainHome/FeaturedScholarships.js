@@ -75,7 +75,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import parse from 'html-react-parser';
 const FeaturedScholarships = () => {
   const [featuredScholarships, setFeaturedScholarships] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -129,7 +129,7 @@ const FeaturedScholarships = () => {
             <h3 className="text-lg font-semibold mb-2 text-red-600">{scholarship.name}</h3>
             <p className="text-sm  mb-2">
               <span className="font-bold italic">Eligibility Criteria:</span>{' '}
-              <span className="text-blue-600">{truncateContent(scholarship.eligibilityCriteria, 100)}</span>
+              <span className="text-blue-600">{parse(truncateContent(scholarship.eligibilityCriteria, 100))}</span>
             </p>
             <p className="text-sm">
               <span className="font-bold italic">Application Deadline:</span>{' '}

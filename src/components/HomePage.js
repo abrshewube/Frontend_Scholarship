@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import parse from 'html-react-parser';
 
 const HomePage = () => {
   // State to store the selected country code
@@ -94,7 +95,7 @@ const HomePage = () => {
               Description: {scholarship.description}
             </p> */}
             <p className="text-sm  mb-2  ">
-              <span class=' font-bold italic'>Eligibility Criteria:</span> <span class='text-blue-600'>{truncateContent(scholarship.eligibilityCriteria, 100) }</span>
+              <span class=' font-bold italic'>Eligibility Criteria:</span> <span class='text-blue-600'>{parse((truncateContent (scholarship.eligibilityCriteria, 100))) }</span>
             </p>
             <p className="text-sm  ">
             <span class=' font-bold italic'>Application Deadline:</span> <span class='text-blue-600' >{new Date(scholarship.applicationDeadline).toLocaleDateString() }</span>
