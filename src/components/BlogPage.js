@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import parse from 'html-react-parser'
 const StudentBlogPage = () => {
   const [blogPosts, setBlogPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -50,7 +50,7 @@ const StudentBlogPage = () => {
             <p className="text-sm text-gray-600 mb-2"><span className=' font-bold italic' >Author:</span> {post.author}</p>
           
             <p className="text-sm text-gray-600"><span className=' font-bold italic'>Date:</span> {new Date(post.date).toLocaleDateString()}</p>
-            <div className="mt-4" dangerouslySetInnerHTML={{ __html: truncateContent(post.content, 100) }} />
+            <div className="mt-4" dangerouslySetInnerHTML={{ __html: truncateContent(parse(post.content), 100) }} />
 
             {/* Add a link to the individual blog post */}
             <div className="flex justify-left mt-6 ml-0">
