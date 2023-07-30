@@ -42,7 +42,7 @@ const BlogPostDetail = () => {
       <h2 className="text-lg font-semibold mb-2 text-red-600">{blogPost.title}</h2>
       <p className="text-sm text-gray-600 mb-2">Author: {blogPost.author}</p>
       <p className="text-sm text-gray-600">Date: {new Date(blogPost.date).toLocaleDateString()}</p>
-      <div className="mt-4" dangerouslySetInnerHTML={{ __html: parse(blogPost.content) }} />
+      <div className="mt-4" dangerouslySetInnerHTML={{ __html: blogPost.content }} />
     </div>
   );
 };
