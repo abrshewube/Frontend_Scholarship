@@ -11,7 +11,7 @@ import BlogPostDetail from './components/BlogPostDetail'
 import HowToApply from './components/HowToApply';
 import PrivacyPolicy from './components/PrivacyPolicy'
 import PageWrapper from './components/PageWrapper';
-import Form from './components/Form/ScholarshipFoem'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -36,7 +36,7 @@ function App() {
           <Route path="/faq" element={<PageWrapper title='Frequently Asked Questions'><FAQPage /></PageWrapper>} />
           <Route path="/how_to_apply" element={<PageWrapper title='How to apply page'><HowToApply/></PageWrapper>} />
           <Route path="/privacy-policy" element={<PageWrapper title='Privacy Policy'><PrivacyPolicy/></PageWrapper>} />
-          <Route path="/form" element={<PageWrapper title='Form'><Form/></PageWrapper>} />
+          
         </Routes>
 <Footer/>
     </>
