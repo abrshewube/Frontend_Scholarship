@@ -11,7 +11,7 @@ const CountryScholarshipPage = () => {
 
   useEffect(() => {
     // Fetch scholarships for the selected country when the component mounts
-    fetch(`http://localhost:8080/api/scholarships/country/${country}`)
+    fetch(`https://yotorscholarships.onrender.com/api/scholarships/country/${country}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);
