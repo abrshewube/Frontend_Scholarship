@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
           {/* Feedback */}
-          <a href="#feedback">Feedback</a>
+          <a href="/contact">Feedback</a>
         </div>
         <div className="w-full">
           {/* Copyright Notice */}

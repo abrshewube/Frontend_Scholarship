@@ -22,13 +22,21 @@ const CountryScholarshipPage = () => {
         setLoading(false);
       });
   }, [country]);
+  
+  const truncateContent = (content, maxLength) => {
+    if (content.length > maxLength) {
+      return content.substring(0, maxLength) + '...';
+    }
+    return content;
+  };
+  
 
   return (
     <div className="container mx-auto px-4 mt-4 mb-4 ml-0">
       <h2 className="text-2xl font-bold mb-4 text-blue-900">
-        Scholarships in {country}
+        Scholarships in   {country} 
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
         {loading ? (
           <div className="loading-spinner">
             <div className="spinner"></div>
@@ -49,7 +57,7 @@ const CountryScholarshipPage = () => {
               </h3>
               <p className="text-sm  mb-2  ">
                 <span className="font-bold italic">Eligibility Criteria:</span>{" "}
-                {scholarship.eligibilityCriteria}
+                {truncateContent(scholarship.eligibilityCriteria,100)}
               </p>
               <p className="text-sm  ">
                 <span className="font-bold italic">Application Deadline:</span>{" "}

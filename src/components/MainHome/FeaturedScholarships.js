@@ -123,9 +123,10 @@ const FeaturedScholarships = () => {
   return (
     <div className="my-10">
       <h2 className="text-2xl font-bold mb-4 color-red text-center text-blue-800 shadow-lg">Featured Scholarships</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
         {featuredScholarships.map((scholarship) => (
           <div key={scholarship._id} className="bg-white p-6 rounded shadow-lg ml-6 mr-2">
+             <img src={scholarship.imageurl} alt={scholarship.name} className="w-full h-40 object-cover" />
             <h3 className="text-lg font-semibold mb-2 text-red-600">{scholarship.name}</h3>
             <p className="text-sm  mb-2">
               <span className="font-bold italic">Eligibility Criteria:</span>{' '}
