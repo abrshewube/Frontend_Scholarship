@@ -83,7 +83,7 @@ const FeaturedScholarships = () => {
 
   // Function to fetch featured scholarships
   const fetchFeaturedScholarships = () => {
-    fetch('https://scholarship-ncvp.onrender.com/api/featured-scholarships')
+    fetch('https://yotorscholarships.onrender.com/api/featured-scholarships')
       .then((response) => response.json())
       .then((data) => {
         setFeaturedScholarships(data);

@@ -7,7 +7,7 @@ const StudentBlogPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://scholarship-ncvp.onrender.com/api/blog')
+    fetch('https://yotorscholarships.onrender.com/api/blog')
       .then((response) => response.json())
       .then((data) => {
         setBlogPosts(data);

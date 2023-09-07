@@ -5,13 +5,14 @@ import parse from 'html-react-parser';
 const HomePage = () => {
   // State to store the selected country code
   const [selectedCountry, setSelectedCountry] = useState(""); // Initialize with an empty string
-  const [scholarships, setScholarships] = useState([]);
+  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [scholarships, setScholarships] = useState([]);
 
   useEffect(() => {
     // Fetch all scholarships when the component mounts
-    fetch("https://scholarship-ncvp.onrender.com/api/scholarships")
+    fetch("https://yotorscholarships.onrender.com/api/scholarships")
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);
@@ -27,7 +28,7 @@ const HomePage = () => {
     const selectedCode = event.target.value;
     setSelectedCountry(selectedCode);
     // Fetch scholarships by country code when a country is selected
-    fetch(`https://scholarship-ncvp.onrender.com/api/scholarships/country/${selectedCode}`)
+    fetch(`https://yotorscholarships.onrender.com/api/scholarships/country/${selectedCode}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarships(data);

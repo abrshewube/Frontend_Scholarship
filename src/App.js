@@ -12,6 +12,8 @@ import HowToApply from './components/HowToApply';
 import PrivacyPolicy from './components/PrivacyPolicy'
 import PageWrapper from './components/PageWrapper';
 import  Form from './components/Form/ScholarshipFoem'
+import CountryList from './components/Countries/CountriesList';
+import CountryScholarships from './components/Countries/CountryScholarships';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -36,9 +38,14 @@ function App() {
           <Route path="/faq" element={<PageWrapper title='Frequently Asked Questions'><FAQPage /></PageWrapper>} />
           <Route path="/how_to_apply" element={<PageWrapper title='How to apply page'><HowToApply/></PageWrapper>} />
           <Route path="/privacy-policy" element={<PageWrapper title='Privacy Policy'><PrivacyPolicy/></PageWrapper>} />
-          {/* <Route path ="/form" element={<PageWrapper title='form'><Form/></PageWrapper>}/> */}
-        </Routes>
-<Footer/>
+          
+          <Route path ="/country" element={<PageWrapper title='Countries '><CountryList/></PageWrapper>}/>
+          <Route path ="/country/:country" element={<PageWrapper title='Countries Detail'><CountryScholarships/></PageWrapper>}/>
+            {/* <Route path ="/form" element={<PageWrapper title='form'><Form/></PageWrapper>}/> */}
+           </Routes> 
+           <Footer/>
+
+
     </>
      
   );

@@ -86,7 +86,7 @@ const ScholarshipsPage = () => {
 
   useEffect(() => {
     // Fetch scholarship details when the component mounts
-    fetch(`https://scholarship-ncvp.onrender.com/api/scholarships/${id}`)
+    fetch(`https://yotorscholarships.onrender.com/api/scholarships/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setScholarship(data);
@@ -116,7 +116,7 @@ const ScholarshipsPage = () => {
   }
 
   return (
-    <div className="flex justify-center mt-4 mb-4">
+    <div className="flex justify-center mt-4 mb-4  ">
       <div className="container mx-auto px-4">
         <h1 className="text-2xl font-bold mb-4 text-blue-900">{scholarship.name}</h1>
         <div className="bg-white p-6 rounded shadow-2xl">
@@ -130,7 +130,7 @@ const ScholarshipsPage = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4 text-red-500">Scholarship Details</h2>
             <h3 className="text-lg font-semibold mb-2 text-blue-500">{scholarship.name}</h3>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-gray-600 mb-2 mt-2">
               <span className="font-bold italic">Description:</span> {parse(scholarship.description)}
             </p>
             <p className="text-sm text-gray-600 mb-2">

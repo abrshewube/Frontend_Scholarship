@@ -8,7 +8,7 @@ const BlogPostDetail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://scholarship-ncvp.onrender.com/api/blog/${id}`)
+    fetch(`https://yotorscholarships.onrender.com/api/blog/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setBlogPost(data);
