@@ -14,7 +14,9 @@ import PageWrapper from './components/PageWrapper';
 import  Form from './components/Form/ScholarshipFoem'
 import CountryList from './components/Countries/CountriesList';
 import CountryScholarships from './components/Countries/CountryScholarships';
-import SearchPage from './components/Search/SearchQuery';
+
+import ScholarshipVideosPage from './components/videos/ScholarshipVideosPage';
+import ScholarshipSources from './components/Sources/ScholarshipSources';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -30,10 +32,10 @@ function App() {
           <Route path="/home" element={<PageWrapper title='All Scholarships'><HomePage /></PageWrapper>} />
           <Route path="/scholarships/:id" element={<PageWrapper title='Scholarship Details'><ScholarshipsPage /> </PageWrapper>}/> 
      
+          <Route path="/videos" element={<PageWrapper title='Scholarship Videos'><ScholarshipVideosPage/></PageWrapper>} /> 
           <Route path="/blog/:id" element={<PageWrapper title='Blog post details'><BlogPostDetail/></PageWrapper>} /> 
-
           <Route path="/blog" element={<PageWrapper title='All blogs'><BlogPage/></PageWrapper>} /> 
-         
+          <Route path="/links" element={<PageWrapper title='Important Links'><ScholarshipSources /></PageWrapper>} />
           <Route path="/contact" element={<PageWrapper title='Contact page'><Contact /></PageWrapper>} />
           <Route path="/about-us" element={ <PageWrapper title="About Us"><AboutUsPage /></PageWrapper>} />
           <Route path="/faq" element={<PageWrapper title='Frequently Asked Questions'><FAQPage /></PageWrapper>} />

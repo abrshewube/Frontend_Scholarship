@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
+
+  
   return (
+    <div >
     <div className="bg-blue-500 py-16">
       <div className="container mx-auto px-4 text-center">
 
@@ -18,9 +21,10 @@ const HeroSection = () => {
        
       </div>
      
- 
-
       </div>
+      
+      </div>
+     
 
 
  
@@ -28,3 +32,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
