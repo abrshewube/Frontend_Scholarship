@@ -3,6 +3,7 @@ import HeroSection from './MainHome/HeroSection';
 import Featured from './MainHome/FeaturedScholarships';
 import CountryList from './Countries/CountriesList';
 import ScholarshipInfoPage from './MainHome/Decorators';
+import Animation from './MainHome/Animation'
 
 const MainHome = () => {
   // Define a CSS class for the background style
@@ -26,8 +27,8 @@ const MainHome = () => {
   return (
     <div style={backgroundStyle}>
       <HeroSection />
-
-      <ScholarshipInfoPage />
+     <ScholarshipInfoPage />
+     <Animation/>
       <Featured />
       <CountryList />
       <br/><br/>

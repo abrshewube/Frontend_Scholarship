@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <!-- College girl -->
+  <circle cx="100" cy="100" r="50" fill="pink" />
+  <rect x="80" y="100" width="40" height="100" fill="pink" />
+  <circle cx="100" cy="60" r="10" fill="black" />
+  <line x1="100" y1="70" x2="100" y2="90" stroke="black" stroke-width="2" />
+  <line x1="90" y1="80" x2="110" y2="80" stroke="black" stroke-width="2" />
+  
+  <!-- Bag -->
+  <rect x="75" y="200" width="50" height="40" fill="brown" />
+  
+  <!-- Strap -->
+  <line x1="75" y1="200" x2="50" y2="150" stroke="black" stroke-width="3" />
+  <line x1="125" y1="200" x2="150" y2="150" stroke="black" stroke-width="3" />
+</svg>
