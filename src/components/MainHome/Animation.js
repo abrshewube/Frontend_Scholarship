@@ -5,7 +5,7 @@ const ScholarshipStudent = () => {
     <div className="container flex justify-end items-center p-9 space-x-8">
       <div className="w-1/2">
         <img
-          src="https://o.remove.bg/downloads/a515824d-1c65-4455-be1f-ede783530b76/png-transparent-student-course-education-resume-student-tshirt-child-people-removebg-preview.png"
+          src="https://o.remove.bg/downloads/45429ba3-7157-4b3c-97de-7bcba15d74db/png-transparent-student-course-education-resume-student-tshirt-child-people-removebg-preview.png"
           alt="College Student"
           className="max-w-full h-auto"
         />
