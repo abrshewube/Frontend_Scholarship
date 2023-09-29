@@ -29,6 +29,7 @@ import Featured from './MainHome/FeaturedScholarships';
 import CountryList from './Countries/CountriesList';
 import ScholarshipInfoPage from './MainHome/Decorators';
 import Animation from './MainHome/Animation';
+import SocialMediaLinks from './MainHome/SOcials';
 
 const MainHome = () => {
   // Define a CSS class for the background style
@@ -56,6 +57,7 @@ const MainHome = () => {
       <Animation />
       <Featured />
       <CountryList />
+      <SocialMediaLinks/>
       <br /><br />
       <div style={curveStyle}></div>
     </div>

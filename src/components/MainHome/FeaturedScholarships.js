@@ -48,14 +48,17 @@ const FeaturedScholarships = () => {
   };
 
   return (
-    <div className="my-10">
+    <div className="my-10  px-6">
+       <div className='bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-lg shadow-lg mb-5 '>
     <div className="flex items-center justify-center">
+     
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="h-20 w-10 inline-block align-text-bottom mr-2">
     <path d="M12 2L2 7l4 2 1 5-3.5 3.5 4 1L12 22l3.5-3.5 4-1-3.5-3.5 1-5 4-2-10-5zm0 9l-3.5 3.5 1 5 2.5-1.5L15.5 19 14 14l3.5-3.5L12 11z"/>
   </svg>
   <h1 className="text-4xl font-extrabold mb-4 text-center text-white leading-tight shadow-lg">
     Featured Scholarships
   </h1>
+  </div>
 </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
         {featuredScholarships.map((scholarship) => (
